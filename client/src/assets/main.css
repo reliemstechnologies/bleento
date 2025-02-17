@@ -1,0 +1,174 @@
+body {
+   margin: 0;
+   padding: 0;
+ }
+
+.centerBody{
+    align-items: center;
+}
+
+.formContent{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+   border: 1px solid black;
+   
+ }
+
+ .avatarContainer{
+    display:  flex;
+    flex-direction: row;
+    margin-top: 20px;
+ }
+
+ .profileDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 200px;
+ }
+
+
+ table td{
+    width: 350px;
+    word-wrap: break-word;
+ }
+
+
+ th,td{
+    padding: 20px;
+ }
+
+ .brtableContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ 
+ 
+
+ .loginFormContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 85px;
+ }
+
+
+.homePage{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 200px;
+}
+
+.profileIcon{
+   height: 40px;
+   width: 40px;
+   background-color: black;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   margin-right: 20px;
+
+}
+
+.iconhover{
+  
+  color: black;
+}
+.iconhover :hover{
+   background-color: #CDCDCD;
+   cursor: pointer;
+   border: #f2eaff;
+   border-radius: 10%;
+}
+
+.sidebar {
+   top: 85px;
+   left: 0;
+   width:280px;
+   height: calc(100vh - 85px);
+   
+   overflow: scroll;
+  position: fixed;
+  
+}
+
+
+.headerProfile{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  margin-top: 10px;
+   align-items: center;
+}
+
+.sidebar ul {
+   list-style: none;
+   padding: 0;
+   margin : 0;
+}
+
+.sidebar ul li {
+   margin-bottom: 15px; /* Spacing between items */
+ }
+
+
+ .sidebar ul li a {
+   display: block; /* Makes the link cover the entire clickable area */
+   text-decoration: none; /* Removes underline */
+   color: black; /* Link color */
+   padding: 8px 35px; /* Adds spacing inside links */
+   border-radius: 5px; /* Adds rounded corners */
+   transition: background-color 0.3s ease; /* Smooth hover effect */
+ }
+
+ .sidebar ul li a:hover {
+   background-color: #CDCDCD; /* Dark gray background on hover */
+   color: white; /* Light blue text on hover */
+ }
+ 
+ /* Active/Selected link styling */
+ .sidebar ul li a.active {
+   background-color: #f2eaff; /* Blue background for active link */
+   color: black; /* White text for active link */
+ }
+
+ .form-group.required .control-label:after {
+   content:"*";
+   color:red;
+ }
+
+
+ .dialog-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .dialog-box {
+   background: white;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
+ }
